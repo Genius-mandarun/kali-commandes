@@ -12,7 +12,7 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 
 ---
 ### 1. Commandes de base de Kali Linux
-#### La commande pwd :
+#### La commande **pwd** :
 - Permet de déterminer dans quel dossier on se trouve actuellement
 - Il donne le chemin complet du dossier actif
 
@@ -23,8 +23,8 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 - **-P** : Affiche le chemin réel sur le disque en cas de chemin symbolique
 <img width="935" height="95" alt="image" src="https://github.com/user-attachments/assets/35295a58-cdf0-4542-93a2-72f95377f4f4" />
 
-
-
+#### La commande **ls** :
+- Permet 
 
 ---
 
