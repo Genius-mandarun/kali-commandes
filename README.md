@@ -16,6 +16,10 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 - Permet de déterminer dans quel dossier on se trouve actuellement
 - Il donne le chemin complet du dossier actif
 
+##### Options :
+- *-P*
+
+
 
 ---
 
