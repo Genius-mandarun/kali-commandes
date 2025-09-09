@@ -17,7 +17,12 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 - Il donne le chemin complet du dossier actif
 
 ##### Options :
-- *-P*
+- **-P** : Affiche le vrai chemin si celui-ci est un chemin symbolique.
+<img width="547" height="98" alt="image" src="https://github.com/user-attachments/assets/8844906a-8ecf-482d-906a-6ad5fa7b778a" />
+
+- **-P** : Affiche le chemin réel sur le disque en cas de chemin symbolique
+<img width="935" height="95" alt="image" src="https://github.com/user-attachments/assets/35295a58-cdf0-4542-93a2-72f95377f4f4" />
+
 
 
 
