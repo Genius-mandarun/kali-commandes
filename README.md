@@ -15,6 +15,10 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 #### La commande **pwd** :
 - Permet de déterminer dans quel dossier on se trouve actuellement
 - Il donne le chemin complet du dossier actif
+- Sa syntaxe est : 
+```bash
+pwd [Option (facultatif)]
+```
 
 ##### Options :
 - **-P** : Affiche le vrai chemin si celui-ci est un chemin symbolique.
@@ -24,7 +28,24 @@ L’objectif de ce guide est de fournir une **introduction progressive** à l’
 <img width="935" height="95" alt="image" src="https://github.com/user-attachments/assets/35295a58-cdf0-4542-93a2-72f95377f4f4" />
 
 #### La commande **ls** :
-- Permet 
+- Permet d'afficher, lister les fichiers et dossier d'un répertoire
+- Sa syntaxe est : 
+```bash
+ls [Option]... [fichier|dossier]...
+```
+##### Options :
+- **-a** : Affiche tous les fichiers, même les fichiers cachés (qui commencent par .).
+- **-l** : Affiche en liste détaillée (droits, propriétaire, taille, date).
+- **-h** : Affiche les tailles en format lisible (Ko, Mo, Go). Souvent utilisé avec -l.
+- **-d** : Affiche uniquement le nom du dossier (et pas son contenu).
+- **-R** : Affiche le contenu des sous-dossiers récursivement.
+- **-S** : Trie par taille (du plus gros au plus petit).
+- **-t** : Trie par date de modification (les plus récents d’abord).
+- **-r** : Inverse l’ordre du tri (utile avec -t ou -S).
+- **-i** : Affiche l’inode de chaque fichier (identifiant interne Linux).
+- **-F** : Ajoute un symbole après chaque nom : / pour dossier, * pour exécutable, etc.
+- **--color=auto** : Colore automatiquement les résultats (dossiers en bleu, exécutables en vert, etc.).
+<img width="939" height="934" alt="image" src="https://github.com/user-attachments/assets/287a8a67-1d90-4f11-aa9e-6d4ec8039f5e" />
 
 ---
 
