@@ -47,7 +47,23 @@ ls [Option]... [fichier|dossier]...
 - **--color=auto** : Colore automatiquement les résultats (dossiers en bleu, exécutables en vert, etc.).
 <img width="939" height="934" alt="image" src="https://github.com/user-attachments/assets/287a8a67-1d90-4f11-aa9e-6d4ec8039f5e" />
 
-### La commande **cd** :
+### La commande **cd** : 
+-  La commande cd (change directory) permet de changer de dossier courant dans le terminal.
+-  C’est comme “naviguer” dans les dossiers de ton ordinateur.
+-  Syntaxe
+```bash
+cd [Chemins | raccourcis]
+```
+#### Raccourcis
+- **cd Dossier** : Entrer dans un dossier du répertoire courant.
+- **cd** : Aller dans ton dossier personnel (home).
+- **cd ..** : Remonter d’un niveau (dossier parent).
+- **cd /** : Aller à la racine du système.
+- **cd -** : Revenir au dossier précédent.
+- **cd ~/Documents** : Aller dans le dossier Documents de ton home.
+- **cd /chemin/absolu** : Aller dans un dossier en utilisant son chemin complet.
+
+<img width="933" height="378" alt="image" src="https://github.com/user-attachments/assets/5bccd164-3263-4e84-8a5f-b8f717613231" />
 
 ---
 ## 📁 2. Gestion des fichiers et dossiers
