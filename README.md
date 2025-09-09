@@ -67,7 +67,83 @@ cd [Chemins | raccourcis]
 
 ---
 ## 📁 2. Gestion des fichiers et dossiers
+### La commande touch :
+- Permet de créer un fichier vide s'il n'existe pas
+- Mettre à jour la date et l’heure d’accès/modification d’un fichier existant.
+- Syntaxe :
+```bash
+touch [OPTION]... FICHIER...
+```
+##### Options : 
+- **-a** : Change uniquement la date d’accès (last access time).
+- **-m** : Change uniquement la date de modification (last modification time).
+- **-c** : Ne crée pas de fichier s’il n’existe pas.
+- **-d** : Fixe une date spécifique en lisant une chaîne (format libre, style “2025-09-09 12:00”).
 
+<img width="945" height="414" alt="image" src="https://github.com/user-attachments/assets/528da9ed-2206-4f21-8dbb-61cf135cc781" />
+
+### La commande mkdir :
+- Permet de créer un ou plusieurs dossiers (répertoires)
+- Syntaxe :
+```bash
+mkdir [OPTION]... DOSSIER...
+```
+##### Options :
+- **-p** : Crée aussi les dossiers parents manquants (sinon mkdir échoue).
+- **-m** : Définit les permissions du dossier à la création (comme chmod).
+- **-v** :  Affiche les messages lors de la création d'un dossier
+<img width="947" height="849" alt="image" src="https://github.com/user-attachments/assets/f3ccac26-18a9-42db-b45b-fc5db07ed465" />
+
+### La commande cp :
+- Permet de copier un fichier ou dossier
+- Il ecrasse les contenues
+- Syntaxe :
+```bash
+cp [OPTIONS] SOURCE... DESTINATION
+```
+##### Options :
+- **-i** : Demande confirmation avant d’écraser
+- **-f** : Force la copie (écrase sans demander)
+- **-n** : N’écrase jamais les fichiers existants
+- **-v** : Mode bavard (affiche les actions)
+- **-u** : Copie seulement si le fichier source est plus récent
+- **-r ou -R** : Copie récursive (dossiers et sous-dossiers)
+- **-a** : Archive : garde permissions, liens, timestamps
+- **p** : Préserve permissions/dates du fichier
+### La commande mv : 
+- Permet de deplacer un fichier ou un dossier
+- Permet de renommer un fichier ou un dossier
+- Syntaxe :
+```bash
+mv [OPTIONS] SOURCE... DESTINATION
+```
+##### Options :
+- **-i** : Demande confirmation avant d’écraser
+- **-f** : Force la copie (écrase sans demander)
+- **-n** : N’écrase jamais les fichiers existants
+- **-v** : Mode bavard (affiche les actions)
+  
+### La commande rm : 
+- Permet de supprimer un fichier ou un dossier
+- Syntaxe :
+```bash
+rm [OPTIONS] DOSSIER...
+```
+##### Options :
+- **-i** : Demande confirmation avant d’écraser
+- **-f** : Force la suppression (écrase sans demander)
+- **-v** : Mode bavard (affiche les actions)
+- **-r ou -R** : Suppression récursive (dossiers + contenu)
+- **-d** : Supprime des dossiers vides (comme rmdir)
+### La commande rmdir : 
+- Permet de supprimer un dossier vides
+- - Syntaxe :
+```bash
+rmdir [OPTIONS] DOSSIER...
+```
+##### Options :
+- **-p** : Supprime aussi les parents vides
+- **-v** : Affiche un message pour chaque suppression
 ---
 ## 📖 3. Lecture et affichage de fichiers
 
