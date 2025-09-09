@@ -146,9 +146,18 @@ rmdir [OPTIONS] DOSSIER...
 - **-v** : Affiche un message pour chaque suppression
 ---
 ## 📖 3. Lecture et affichage de fichiers
-
+### La commande cat :
+### La commande less:
+### La commande head:
+### La commande tail:
+### La commande nl:
+### La commande more:
 ---
 ## 🔎 4. Recherche
+### La commande find:
+### La commande grep:
+### La commande locate:
+### La commande which / whereis:
 
 ---
 ## ⚙️ 5. Informations système
