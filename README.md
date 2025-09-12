@@ -137,7 +137,7 @@ rm [OPTIONS] DOSSIER...
 - **-d** : Supprime des dossiers vides (comme rmdir)
 ### La commande rmdir : 
 - Permet de supprimer un dossier vides
-- - Syntaxe :
+- Syntaxe :
 ```bash
 rmdir [OPTIONS] DOSSIER...
 ```
@@ -147,6 +147,23 @@ rmdir [OPTIONS] DOSSIER...
 ---
 ## 📖 3. Lecture et affichage de fichiers
 ### La commande cat :
+- Permet d'afficher les contenus d'un fichier dans le terminal
+- Permet de créer un fichier avec **>**
+- Permet de concaténer (coller) plusieurs fichiers en un seul
+- Rediriger du texte ou un contenu dans un autre fichier.
+- - Syntaxe :
+```bash
+cat [OPTION]... [FICHIER]...
+```
+#### Options :
+- **-n** : Numérote toutes les lignes
+- **-b**  : Numérote seulement les lignes non vides
+- **-s** : Supprime les lignes vides répétées (n’en garde qu’une seule)
+- **-E** : Montre un $ à la fin de chaque ligne (pour voir les retours à la ligne)
+- **-T** : Affiche les tabulations comme ^I
+- **-A** : Affiche tout (équivaut à -vET, pratique pour déboguer
+- **-v** : Affiche les caractères non imprimables (mais pas \n et \t)
+
 ### La commande less:
 ### La commande head:
 ### La commande tail:
