@@ -221,22 +221,93 @@ nl [options] fichier
 ---
 ## 🔎 4. Recherche
 ### La commande find:
+- Permet de rechercher des fichiers/dossiers selon leur nom, type, taille, date, permissions, etc.
+- Syntaxe :
+```bash
+find chemin [options] [expression]
+```
+
+#### Options :
+- **-name "fichier"** : chercher par nom
+- **-iname** : chercher par nom, sans tenir compte des maj/min
+- **-type f** : recherche par fichier uniquement
+- **-type d** : Recherche par dossier uniquement
+- **-size +10M** : fichiers de plus de 10 Mo
+- **-perm 644** : fichiers avec permission exacte 644
+- **-user utilisateur** : fichiers appartenant à un utilisateur
+- **-exec commande {} \;** : exécuter une commande sur chaque résultat
+<img width="938" height="356" alt="image" src="https://github.com/user-attachments/assets/0cda9c80-11d3-4077-905e-574864df20da" />
+
 ### La commande grep:
+- Cherche un mot ou motif (pattern) dans un fichier ou un flux.
+- syntaxe
+```bash
+grep [options] "mot" fichier
+```
+#### Options : 
+- **-i**: ignore la casse (maj/min)
+- **-n**: affiche le numéro de ligne
+- **-r**: recherche récursive dans un dossier
+- **-v**: inverse : affiche les lignes qui ne contiennent pas le mot
+- **-E**: active les expressions régulières avancées (regex)
+- **-color=auto**: surligner les correspondances
+<img width="958" height="154" alt="image" src="https://github.com/user-attachments/assets/204d44ce-941f-4520-a299-0439251dc072" />
+
+### La commande egrep:
+- Comme grep, mais pour utiliser plus facilement les regex avancées.
+- équivalent de grep -E
+- Exemple
+<img width="961" height="154" alt="image" src="https://github.com/user-attachments/assets/051a815d-adf7-4f92-8a84-b2d30c030e93" />
+**Cherche root ou admin.**
+  
 ### La commande locate:
-### La commande which / whereis:
+- Utilise une base de données indexée → beaucoup plus rapide que find.
+- Nécessite de mettre à jour la base avec **updatedb**.
+- syntaxe
+```bash
+locate mot
+```
+
+### La commande which / whereis/ type:
+- Utiles pour savoir où est installé un programme
+- **which**: donne le chemin d’un binaire dans $PATH
+- **whereis**: donne le chemin + doc man + source (si dispo)
+- **type**: indique si une commande est un binaire, un alias, une fonction…
 
 ---
 ## ⚙️ 5. Informations système
 
+- **uname -a** : Donne toutes les infos du noyau (version Linux, architecture, etc.).
+![Uploading image.png…]()
+
+- **lsb_release -a** : Donne la version de la distribution (ex: Debian 12, Ubuntu 22.04, Kali).
+- **cat /etc/os-release** : Affiche les infos système
+- **lscpu** : Donne les infos du processeur.
+- **free -h** : Affiche la mémoire RAM dispo/occupée.
+- **top/htop** : Surveille en temps réel l’utilisation CPU/mémoire/processus.
+- **df -h** : Utilisation des disques (taille, espace libre).
+- **du -sh /var/log** : Taille totale d’un dossier.
+- **lsblk** : Liste les disques et partitions.
 ---
 ## 🔑 6. Gestion des droits
+- **chmod permisions fichier** : Change les permissions
+- **chown utilisateur:group fichier** : Change l’utilisateur et groupe propriétaire.
 
+----
+## 🌍 7. Réseau
 ---
-## 📦 7. Gestion des paquets (Debian, Ubuntu, Kali)
----
-## 🌍 8. Réseau
----
+- **ping** : Teste la connexion internet
+- **ip a** : Affiche ous les adresses IP
+- **hostname -I** : Affiche uniquement l’adresse IP locale.
+- **ip route** : Affiche la route réseau (passerelle, etc.).
+- **ss -tulnp** : Liste les ports ouverts et les processus associés.
+- **nslookup/dig** : Résout le nom de domaine vers une IP.
+- **tcpdump -i eth0** : Capture le trafic réseau sur l’interface eth0
+- **iftop** : Surveille la bande passante en temps réel (si installé).
 
+## 8. Autres
+- **strings fichier** : extrait le texte lisible d’un binaire
+- **uptime**` : depuis combien de temps tourne la machine
 ## ✅ Conclusion  
 Apprendre la ligne de commande sous Kali Linux est une étape incontournable pour progresser en cybersécurité.  
 Avec de la pratique, tu pourras :  
