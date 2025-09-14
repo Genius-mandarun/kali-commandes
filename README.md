@@ -151,7 +151,7 @@ rmdir [OPTIONS] DOSSIER...
 - Permet de créer un fichier avec **>**
 - Permet de concaténer (coller) plusieurs fichiers en un seul
 - Rediriger du texte ou un contenu dans un autre fichier.
-- - Syntaxe :
+- Syntaxe :
 ```bash
 cat [OPTION]... [FICHIER]...
 ```
@@ -164,11 +164,60 @@ cat [OPTION]... [FICHIER]...
 - **-A** : Affiche tout (équivaut à -vET, pratique pour déboguer
 - **-v** : Affiche les caractères non imprimables (mais pas \n et \t)
 
+<img width="951" height="108" alt="image" src="https://github.com/user-attachments/assets/f9f2553a-d53b-4782-ab2d-cc84b9b72bee" />
+
 ### La commande less:
+- Permet de lire un fichier page par page (sans tout afficher d’un coup).
+C’est très utile pour parcourir de gros fichiers de logs (ex : /var/log/auth.log).
+- Pour sortir de la lecture, on clique sur la touche **Q/q**
+- Pour chercher un mot, on utilise **/mot à chercher**
+- Syntaxe :
+```bash
+less [options] fichier
+```
+#### Options :
+- **-N** : Affuche les numéro de ligne
+-**+F** : suivre en temps réel les nouvelles lignes
+
 ### La commande head:
+- Permet d'afficher la premier ligne d'un fichier (par défaut)
+- Syntaxe :
+```bash
+head [options] fichier
+```
+#### Options :
+- **-n x** :  Affiche les X premières lignes
+- **-c X** : Affiche les X premiers caractères (ou octets)
+<img width="957" height="581" alt="image" src="https://github.com/user-attachments/assets/7078b8e8-55be-4289-b9d1-5d7a916789d0" />
+ 
 ### La commande tail:
+- Permet d'afficher les dernières lignes d'un fichier
+- On peut surveiller un fichier en temps réels (comme de log)
+- Syntaxe :
+```bash
+tail [options] fichier
+```
+#### Options :
+- **-n x**: afficher les X dernières lignes
+- **-f** : suivre en temps réel les nouvelles lignes (ex: quand un fichier log s’actualise)
+- **-c x** : afficher les X derniers caractères
+<img width="941" height="939" alt="image" src="https://github.com/user-attachments/assets/77d8ad74-375c-4c43-864c-8849917127f1" />
+
 ### La commande nl:
+- Affiche le contenu d’un fichier avec numéros de ligne (similaire à cat -n mais plus flexible).
+- Syntaxe :
+```bash
+nl [options] fichier
+```
+
+#### Options : 
+- **-b a** : numéroter toutes les lignes
+- **-b t** : numéroter uniquement les lignes non vides (par défaut)
+
+<img width="938" height="701" alt="image" src="https://github.com/user-attachments/assets/19886297-db1f-4469-a4d8-63d085b9cebc" />
+
 ### La commande more:
+- Comme less 
 ---
 ## 🔎 4. Recherche
 ### La commande find:
